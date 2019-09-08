@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="049ff2ef-bfbb-4769-907f-277bf7d3fb37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MineSweeper/GameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MineSweeper/GameStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" afterDir="false" />
-    </list>
+    <list default="true" id="049ff2ef-bfbb-4769-907f-277bf7d3fb37" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,12 +189,12 @@
       <workItem from="1555541391148" duration="305000" />
       <workItem from="1561335470306" duration="601000" />
       <workItem from="1564694029558" duration="2756000" />
-      <workItem from="1567970132175" duration="963000" />
+      <workItem from="1567970132175" duration="1259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68249000" />
+    <option name="totallyTimeSpent" value="68545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
