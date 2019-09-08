@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="049ff2ef-bfbb-4769-907f-277bf7d3fb37" name="Default Changelist" comment="" />
+    <list default="true" id="049ff2ef-bfbb-4769-907f-277bf7d3fb37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MineSweeper/GameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MineSweeper/GameStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MineSweeper/GameStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1141">
-              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+            <state relative-caret-position="1870">
+              <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MineSweeper/ClickControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="11" column="13" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MineSweeper/TileLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1258">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="393">
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,15 +83,18 @@
       <find>menu</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ClickControl.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/GameStart.java" />
-        <option value="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" />
         <option value="$PROJECT_DIR$/src/MineSweeper/ClickControl.java" />
         <option value="$PROJECT_DIR$/src/MineSweeper/GameStart.java" />
+        <option value="$PROJECT_DIR$/src/MineSweeper/TileLayout.java" />
       </list>
     </option>
   </component>
@@ -102,60 +110,23 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Mine_Sweeper_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mine Sweeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine Sweeper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MineSweeper" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548716797662" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/Mine_Sweeper_jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -179,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.Mine Sweeper.jar">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="MineSweeper.GameStart" />
       <module name="Mine Sweeper" />
@@ -196,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Mine Sweeper.jar" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JAR Application.Mine Sweeper.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -223,16 +194,17 @@
       <workItem from="1555541391148" duration="305000" />
       <workItem from="1561335470306" duration="601000" />
       <workItem from="1564694029558" duration="2756000" />
+      <workItem from="1567970132175" duration="963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67286000" />
+    <option name="totallyTimeSpent" value="68249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25285044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -246,9 +218,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -310,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MineSweeper/ClickControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="11" column="13" selection-end-line="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -320,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MineSweeper/TileLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="393">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -330,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MineSweeper/GameStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1141">
-          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        <state relative-caret-position="1870">
+          <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

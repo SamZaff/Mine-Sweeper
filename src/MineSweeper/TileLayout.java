@@ -8,7 +8,9 @@ import java.util.Random;
 class TileLayout {
     private BufferedImage ClickedTile;
     private BufferedImage UnclickedTile;
-    int[][] layout = {
+    private int width;
+    private int height;
+    /*int[][] layout = {
             {9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             {9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9},
@@ -25,17 +27,37 @@ class TileLayout {
             {9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9},
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9}
-    };
+    };*/
 
-    void init(BufferedImage UnclickedTile, BufferedImage ClickedTile) {
-        shuffle(layout);
+    int[][] layout;
+    TileLayout(BufferedImage UnclickedTile, BufferedImage ClickedTile, int width, int height, int bombCount) {
         this.UnclickedTile = UnclickedTile;
         this.ClickedTile = ClickedTile;
+        this.width = width;
+        this.height = height;
+        this.layout = new int[height/25][width/25];
+        Random rand = new Random();
+
+        for (int i = 0; i < height/25; i++) {
+            for (int j = 0; j < width/25; j++) {
+                if (rand.nextInt(2) == 0 && bombCount > 0) {
+                    this.layout[i][j] = 9;
+                    bombCount--;
+                }
+                else {
+                    this.layout[i][j] = 0;
+                }
+            }
+        }
     }
+    /*void init(BufferedImage UnclickedTile, BufferedImage ClickedTile, int width, int height) {
+        this.UnclickedTile = UnclickedTile;
+        this.ClickedTile = ClickedTile;
+    }*/
 
 
 
-    private int[][] shuffle(int[][] layout) {
+    int[][] shuffle() {
         Random random = new Random();
         for (int i = layout.length - 1; i > 0; i--) {
             for (int j = layout[i].length - 1; j > 0; j--) {
@@ -55,7 +77,7 @@ class TileLayout {
         int counter = 0;
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
-                if (x + j >= 0 && x + j <= 15 && y + i >= 0 && y + i <= 15) {
+                if (x + j >= 0 && x + j <= ((width/25)-1) && y + i >= 0 && y + i <= ((height/25)-1)) {
                     if (layout[y + i][x + j] == 9 || layout[y + i][x + j] == 8 || layout[y + i][x + j] == 10) {
                         counter++;
                     }
@@ -79,7 +101,7 @@ class TileLayout {
         if (layout[y][x] == 1 && check(y, x) == 0 ) {
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
-                    if (x + j >= 0 && x + j <= 15 && y + i >= 0 && y + i <= 15 && layout[y + i][x + j] != 8) {
+                    if (x + j >= 0 && x + j <= ((width/25)-1) && y + i >= 0 && y + i <= ((height/25)-1) && layout[y + i][x + j] != 8) {
                         layout[y + i][x + j] = 1;
                     }
                 }
@@ -138,6 +160,6 @@ class TileLayout {
 
             }
         }
-        }
     }
+}
 

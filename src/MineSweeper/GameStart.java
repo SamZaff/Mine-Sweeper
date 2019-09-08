@@ -16,8 +16,9 @@ import static javax.imageio.ImageIO.read;
  */
 public class GameStart extends JPanel implements KeyListener {
 
-    static final int SCREEN_WIDTH = 400;
+    static final int SCREEN_WIDTH = 775;
     static final int SCREEN_HEIGHT = 400;
+    static final int bombCount = 99;
     public boolean isAlwaysOnTop = false;
     private BufferedImage world;
     private Graphics2D buffer;
@@ -59,8 +60,10 @@ public class GameStart extends JPanel implements KeyListener {
             System.out.println(ex.getMessage());
         }
 
-        TL = new TileLayout();
-        TL.init(UnclickedTile, ClickedTile);
+        TL = new TileLayout(UnclickedTile, ClickedTile, SCREEN_WIDTH, SCREEN_HEIGHT, bombCount);
+        //TL.init(;
+        TL.shuffle();
+        TL.shuffle();
         CC = new ClickControl();
         CC.init(TL);
         jf.setLayout(new BorderLayout());
@@ -89,8 +92,10 @@ public class GameStart extends JPanel implements KeyListener {
         int keyPressed = ke.getKeyCode();
 
         if (keyPressed == KeyEvent.VK_SPACE) {
-            TL = new TileLayout();
-            TL.init(UnclickedTile, ClickedTile);
+            TL = new TileLayout(UnclickedTile, ClickedTile, SCREEN_WIDTH, SCREEN_HEIGHT, bombCount);
+            //TL.init(UnclickedTile, ClickedTile);
+            TL.shuffle();
+            TL.shuffle();
             CC.init(TL);
         }
         if (keyPressed == KeyEvent.VK_UP && frequency < .99) {
