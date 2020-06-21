@@ -1,0 +1,17 @@
+31
+16
+99
+
+***DO NOT CHANGE ORDER OR ADD SPACES***
+
+*1st value: WIDTH (in tiles)
+*2nd value: HEIGHT (in tiles)
+*3rd value: BOMB COUNT
+
+Original values: 31, 16, 99
+*Change these values to change the difficulty and size of your minesweeper map!
+
+*You must change the values and save changes while the game is closed to have any effect
+
+*Suggested amount: about 20% of the total tiles should be bombs, though that value
+*is higher with very large maps
