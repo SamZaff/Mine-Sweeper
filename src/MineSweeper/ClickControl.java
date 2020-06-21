@@ -62,7 +62,11 @@ public class ClickControl extends MouseAdapter {
     }
 
     public void mouseDragged(MouseEvent e) {
+        int mx = e.getX();
         Point currCoords = e.getLocationOnScreen();
-        GameStart.jf.setLocation(currCoords.x - mouseDownCompCoords.x, currCoords.y - mouseDownCompCoords.y);
+        //if (mx >= GameStart.SCREEN_WIDTH) {
+            GameStart.jf.setLocation(currCoords.x - mouseDownCompCoords.x, currCoords.y - mouseDownCompCoords.y);
+        //}
+
     }
 }

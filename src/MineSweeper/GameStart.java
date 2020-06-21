@@ -9,6 +9,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.File;
 import static javax.imageio.ImageIO.read;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 /**
  *
@@ -16,8 +18,10 @@ import static javax.imageio.ImageIO.read;
  */
 public class GameStart extends JPanel implements KeyListener {
 
-    static final int SCREEN_WIDTH = 400;
-    static final int SCREEN_HEIGHT = 400;
+    static int SCREEN_WIDTH;
+    static int SCREEN_HEIGHT;
+    static int bombCount;
+    private static final String DELIMITERS = ", ";
     public boolean isAlwaysOnTop = false;
     private BufferedImage world;
     private Graphics2D buffer;
@@ -26,6 +30,8 @@ public class GameStart extends JPanel implements KeyListener {
     private BufferedImage UnclickedTile = null, ClickedTile = null, spikes = null;
     private float frequency = .44f;
     private ClickControl CC;
+    File file = new File("file.txt");
+    BufferedReader reader = null;
 
     public static void main(String[] args) {
         GameStart gamex = new GameStart();
@@ -45,9 +51,16 @@ public class GameStart extends JPanel implements KeyListener {
 
     private void init() {
         jf = new JFrame("Mine Sweeper");
-        this.world = new BufferedImage(GameStart.SCREEN_WIDTH, GameStart.SCREEN_HEIGHT, BufferedImage.TYPE_INT_RGB);
+
         try {
             System.out.println(System.getProperty("user.dir"));
+            reader = new BufferedReader(new FileReader("Settings.txt"));
+            String text = null;
+            SCREEN_WIDTH = Integer.parseInt(reader.readLine()) * 25;
+            SCREEN_HEIGHT = Integer.parseInt(reader.readLine()) * 25;
+            bombCount = Integer.parseInt(reader.readLine());
+            reader.close();
+            System.out.println(SCREEN_HEIGHT);
             /*
              * note class loaders read files from the out folder (build folder in netbeans) and not the
              * current working directory.
@@ -58,9 +71,11 @@ public class GameStart extends JPanel implements KeyListener {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-
-        TL = new TileLayout();
-        TL.init(UnclickedTile, ClickedTile);
+        this.world = new BufferedImage(GameStart.SCREEN_WIDTH, GameStart.SCREEN_HEIGHT, BufferedImage.TYPE_INT_RGB);
+        TL = new TileLayout(UnclickedTile, ClickedTile, SCREEN_WIDTH, SCREEN_HEIGHT, bombCount);
+        //TL.init(;
+        TL.shuffle();
+        TL.shuffle();
         CC = new ClickControl();
         CC.init(TL);
         jf.setLayout(new BorderLayout());
@@ -69,7 +84,7 @@ public class GameStart extends JPanel implements KeyListener {
         jf.addMouseListener(CC);
         jf.addMouseMotionListener(CC);
         jf.addKeyListener(this);
-        jf.setSize(GameStart.SCREEN_WIDTH, GameStart.SCREEN_HEIGHT);
+        jf.setSize(GameStart.SCREEN_WIDTH + 25, GameStart.SCREEN_HEIGHT);
         jf.setResizable(false);
         jf.setLocationRelativeTo(null);
         jf.setUndecorated(true);
@@ -89,8 +104,10 @@ public class GameStart extends JPanel implements KeyListener {
         int keyPressed = ke.getKeyCode();
 
         if (keyPressed == KeyEvent.VK_SPACE) {
-            TL = new TileLayout();
-            TL.init(UnclickedTile, ClickedTile);
+            TL = new TileLayout(UnclickedTile, ClickedTile, SCREEN_WIDTH, SCREEN_HEIGHT, bombCount);
+            //TL.init(UnclickedTile, ClickedTile);
+            TL.shuffle();
+            TL.shuffle();
             CC.init(TL);
         }
         if (keyPressed == KeyEvent.VK_UP && frequency < .99) {
